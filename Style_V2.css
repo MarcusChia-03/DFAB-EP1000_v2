@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'SansSerif BoldOblique';
+}
+
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background: url(images/sky.jpg);
+    background-size: 1000px;
+    color: dimgray;
+    font-size: 20px;
+    text-align: left;
+    padding: 40px;
+}
+
+#content {
+    background: url(images/image.png);
+    color: dimgray;
+    padding: 30px
+}
+
+table, th, td {
+    border: 3px solid lightgray;
+    border-collapse: collapse;
+    background-color: #f3fcff;
+}
+
+td {
+    padding: 5px 10px 5px 20px
+}
+
+#footer {
+    clear: both;
+    padding: 10px;
+    background-color: #999999;
+    color: white;
+    text-align: right;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #38C8FF;
+}
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #FFF;
+        text-align: center;
+        padding: 18px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        height: 26px;
+    }
+
+        .topnav a:hover {
+            background-color: #FFF;
+            color: #1bc4ff;
+        }
+
+        .topnav a.active {
+            background-color: #589BFF;
+            color: white;
+        }
+
+    .topnav .icon {
+        display: none;
+    }
+
+.cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d8d8d8;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0s;
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #BFBFBF;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0s;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 18px 20px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: white;
+        color: #1bc4ff;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: dimgray;
+        padding: 14px 18px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #38C8FF;
+            color: white;
+        }
+
+.show {
+    display: block;
+}
