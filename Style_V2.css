@@ -4,24 +4,26 @@ body {
 }
 
 #container {
-    width: 1000px;
     margin-left: auto;
     margin-right: auto;
+	padding: 0px;
 }
 
 #header {
     background: url(images/sky.jpg);
-    background-size: 1000px;
-    color: dimgray;
+    background-size: 1530px;
+    color: white;
     font-size: 20px;
     text-align: left;
-    padding: 40px;
+    padding: 20px;
 }
 
 #content {
-    background: url(images/image.png);
+    background: url(images/custom2.png);
+	background-repeat: repeat;
+	background-size: cover;
     color: dimgray;
-    padding: 30px
+    padding: 15px 15px 15px 120px
 }
 
 table, th, td {
@@ -36,7 +38,7 @@ td {
 
 #footer {
     clear: both;
-    padding: 10px;
+    padding: 15px;
     background-color: #999999;
     color: white;
     text-align: right;
@@ -44,7 +46,7 @@ td {
 
 .topnav {
     overflow: hidden;
-    background-color: #38C8FF;
+    background: url(images/menu.JPG);
 }
 
     .topnav a {
@@ -60,11 +62,11 @@ td {
 
         .topnav a:hover {
             background-color: #FFF;
-            color: #1bc4ff;
+            color: #2C6EFF;
         }
 
         .topnav a.active {
-            background-color: #589BFF;
+            background: url(images/selected.JPG);
             color: white;
         }
 
@@ -117,7 +119,7 @@ td {
 
     .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
         background-color: white;
-        color: #1bc4ff;
+        color: #2C6EFF;
     }
 
 .dropdown-content {
@@ -139,7 +141,7 @@ td {
     }
 
         .dropdown-content a:hover {
-            background-color: #38C8FF;
+            background: url(images/selected.JPG);
             color: white;
         }
 
