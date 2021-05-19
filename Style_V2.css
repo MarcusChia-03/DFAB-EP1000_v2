@@ -22,8 +22,9 @@ body {
     background: url(images/custom2.png);
 	background-repeat: repeat;
 	background-size: cover;
+	background-attachment: fixed;
     color: dimgray;
-    padding: 15px 15px 15px 120px;
+    padding: 15px 120px 15px 120px;
 	 line-height: 1.6;
 }
 
