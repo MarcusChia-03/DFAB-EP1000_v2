@@ -18,99 +18,141 @@
 
     <div id="container">
         <div id="header">
-            <h1>My Website</h1>
+            <h1>My Fabrication & Prototyping Site</h1>
         </div>
 
-        <div class="topnav" id="myTopnav">
-            <a href="Home.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Safety.html">FABLab Safety</a>
-            <a href="Project.html">Project Management</a>
-            <a href="" class="active">Web</a>
+        <div id="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Safety.html">FABLab Safety</a>
+                <a href="Project.html">Project Management</a>
+                <a href="" class="active">Web</a>
+                <a href="">Embedded Programming</a>
 
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">
-                    Fabrication &#128899
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#">3D Printing</a>
-                    <a href="#">Laser Cutting</a>
-                    <a href="#">CNC Router</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        Fabrication &#128899
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">3D Printing</a>
+                        <a href="#">Laser Cutting</a>
+                        <a href="#">CNC Router</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="content">
-            <h2>Web</h2>
+            <h1>Web</h1>
+            <h2>HTML</h2>
+
             <p>
                 The section documents the web development assignment.
-                <ul>
-                    > What is HTML, basic structure of HTML pages.
-                </ul>
-                <ul>
-                    > Common HTML tags, images, hyperlinks.
-                </ul>
-                <ul>
-                    > CSS and style sheets.
-                </ul>
-                <img src="images/basicweb.JPG" width="600" />
+                <ol>
+                    <li>What is HTML, basic structure of HTML pages.</li>
+                    <li>Common HTML tags, images, hyperlinks.</li>
+                    <li>CSS and style sheets.</li>
+                </ol>
+                HTML is a language used to organise the content of a website it consist of tags (examples of tags are in the table).
+                The tags define the parts of the document.
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <th>HTML Tags</th>
+                        <th>Definition</th>
+                    </tr>
+                    <tr>
+                        <td>html.../html</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>head.../head</td>
+                        <td>Page description</td>
+                    </tr>
+                    <tr>
+                        <td>body.../body</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>p.../p</td>
+                        <td>Next Paragraph</td>
+                    </tr>
+                    <tr>
+                        <td>br.../br</td>
+                        <td>Next Line</td>
+                    </tr>
+                    <tr>
+                        <td>ul.../ul</td>
+                        <td>Unordered List</td>
+                    </tr>
+                    <tr>
+                        <td>ol.../ol</td>
+                        <td>Ordered List</td>
+                    </tr>
+                    <tr>
+                        <td>h1.../h1</td>
+                        <td>Header (no. from 1 to 6 determines the font size)</td>
+                    </tr>
+                </table>
+                <br>
+                To start making a website, i first create a basic structure using the HTML tags.
+                <br>
+                <img src="images/basicweb.JPG" width="450" />
+                <br>
+                To create multiple pages in a website, i first duplicate the codes for the current page and insert the links to my other pages.
+                <br>
+                <h2>CSS</h2>
+                <br>
+                A website created using only HTML only can be quite unappealing, hence we can use CSS to change the appearance of it.
+                <br>
+                div tags are used to distinguish parts of a website, which allows the coder to set the font, size, background, orentation, etc of the web page.
             </p>
-            <table style="width:100%">
-                <tr>
-                    <th>HTML Tags</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>p.../p</td>
-                    <td>Next Paragraph</td>
-                </tr>
-                <tr>
-                    <td>br.../br</td>
-                    <td>Next Line</td>
-                </tr>
-                <tr>
-                    <td>ul.../ul</td>
-                    <td>Unordered List</td>
-                </tr>
-                <tr>
-                    <td>ol.../ol</td>
-                    <td>Ordered List</td>
-                </tr>
-                <tr>
-                    <td>h1.../h1</td>
-                    <td>Header</td>
-                </tr>
-            </table>
         </div>
-
+            
         <div id="footer">
             Copyright &copy; 2021 Marcus Chia.
         </div>
     </div>
     <script>
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    }
-    else {
-        x.className = "topnav";
-    }
-    }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
     </script>
 
     <script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+    <script>
+window.onscroll = function() {menuFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function menuFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
   }
 }
     </script>
