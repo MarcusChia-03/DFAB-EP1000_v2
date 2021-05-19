@@ -23,7 +23,8 @@ body {
 	background-repeat: repeat;
 	background-size: cover;
     color: dimgray;
-    padding: 15px 15px 15px 120px
+    padding: 15px 15px 15px 120px;
+	 line-height: 1.6;
 }
 
 table, th, td {
@@ -73,6 +74,16 @@ td {
     .topnav .icon {
         display: none;
     }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
 
 .cursor {
     position: fixed;
