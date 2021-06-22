@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style_V2.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function(e){
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX
+            + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+
+    <div id="container">
+        <div id="header">
+            <h1>Fabrication & Prototyping Site</h1>
+        </div>
+
+        <div id="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Safety.html">FABLab Safety</a>
+                <a href="Project.html">Project Management</a>
+                <a href="Web.html">Web</a>
+                <a href="Program.html" class="active">Embedded Programming</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        Fabrication &#128899
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="Printing.html">3D Printing</a>
+                        <a href="Cutting.html">Laser Cutting</a>
+                        <a href="CNC.html">CNC Router</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <h1>Embedded Programming</h1>
+            <h2>Pedestrian Crossing & Traffic Light</h2>
+            <img src="images/trafficCircuit.JPG" width="900" />
+            <img src="images/code.JPG" width="500" />
+        </div>
+
+        <div id="footer">
+            Copyright &copy; 2021 Marcus Chia.
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+    <script>
+window.onscroll = function() {menuFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function menuFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+</body>
+</html>
