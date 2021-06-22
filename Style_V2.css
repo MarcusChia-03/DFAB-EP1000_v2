@@ -1,12 +1,17 @@
 body {
     margin: 0;
-    font-family: 'SansSerif BoldOblique';
+    font-family: SansSerif BoldOblique;
 }
 
 #container {
+    background: url(images/custom2.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin-left: auto;
     margin-right: auto;
-	padding: 0px;
+    padding: 0px;
+    position: relative;
 }
 
 #header {
@@ -19,13 +24,9 @@ body {
 }
 
 #content {
-    background: url(images/custom2.png);
-	background-repeat: repeat;
-	background-size: cover;
-	background-attachment: fixed;
     color: dimgray;
-    padding: 15px 120px 15px 120px;
-	 line-height: 1.6;
+    padding: 20px 130px 20px 130px;
+    line-height: 1.6;
 }
 
 table, th, td {
@@ -48,7 +49,7 @@ td {
 
 .topnav {
     overflow: hidden;
-    background: url(images/menu.JPG);
+    background-color: #0D008C;
 }
 
     .topnav a {
@@ -61,15 +62,13 @@ td {
         font-size: 20px;
         height: 26px;
     }
-
         .topnav a:hover {
             background-color: #FFF;
-            color: #2C6EFF;
-			transition: 0.5s;
+            color: #0D008C;
+            transition: 0.5s;
         }
-
         .topnav a.active {
-            background: url(images/selected.JPG);
+            background-color: #999999;
             color: white;
         }
 
@@ -81,6 +80,7 @@ td {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .sticky + .content {
@@ -132,8 +132,8 @@ td {
 
     .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
         background-color: white;
-        color: #2C6EFF;
-		transition: 0.5s;
+        color: #0D008C;
+        transition: 0.5s;
     }
 
 .dropdown-content {
@@ -147,17 +147,17 @@ td {
 
     .dropdown-content a {
         float: none;
-        color: dimgray;
-        padding: 14px 18px;
+        color: #0D008C;
+        padding: 14px 16px;
         text-decoration: none;
         display: block;
         text-align: left;
     }
 
         .dropdown-content a:hover {
-            background: url(images/selected.JPG);
+            background-color: #999999;
             color: white;
-			transition: 0.5s;
+            transition: 0.5s;
         }
 
 .show {
