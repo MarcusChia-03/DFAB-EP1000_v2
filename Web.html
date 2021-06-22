@@ -15,10 +15,10 @@
             + "px; top: " + e.clientY + "px;";
         });
     </script>
-
+    
     <div id="container">
         <div id="header">
-            <h1>My Fabrication & Prototyping Site</h1>
+            <h1>Fabrication & Prototyping Site</h1>
         </div>
 
         <div id="navbar">
@@ -28,7 +28,7 @@
                 <a href="Safety.html">FABLab Safety</a>
                 <a href="Project.html">Project Management</a>
                 <a href="" class="active">Web</a>
-                <a href="">Embedded Programming</a>
+                <a href="Program.html">Embedded Programming</a>
 
                 <div class="dropdown">
                     <button class="dropbtn" onclick="myFunction()">
@@ -36,9 +36,9 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content" id="myDropdown">
-                        <a href="#">3D Printing</a>
-                        <a href="#">Laser Cutting</a>
-                        <a href="#">CNC Router</a>
+                        <a href="Printing.html">3D Printing</a>
+                        <a href="Cutting.html">Laser Cutting</a>
+                        <a href="CNC.html">CNC Router</a>
                     </div>
                 </div>
             </div>
@@ -46,71 +46,112 @@
 
         <div id="content">
             <h1>Web</h1>
-            <h2>HTML</h2>
+            <div id="left">
+                <h2>HTML</h2>
+                <p>
+                    The section documents the web development assignment.
+                    <ol>
+                        <li>What is HTML, basic structure of HTML pages.</li>
+                        <li>Common HTML tags, images, hyperlinks.</li>
+                        <li>CSS and style sheets.</li>
+                    </ol>
+                    HTML is a language used to organise the content of a website it consist of tags (examples of tags are in the table).
+                    The tags define the parts of the document.
+                    <br>
+                    <br>
+                    To start making a website, i first create a basic structure using the HTML tags.
+                    <br>
+                    <br>
+                    <table style="width:100%">
+                        <tr>
+                            <th>HTML Tags</th>
+                            <th>Definition</th>
+                        </tr>
+                        <tr>
+                            <td>html.../html</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>head.../head</td>
+                            <td>Page description</td>
+                        </tr>
+                        <tr>
+                            <td>body.../body</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>p.../p</td>
+                            <td>Next Paragraph</td>
+                        </tr>
+                        <tr>
+                            <td>br.../br</td>
+                            <td>Next Line</td>
+                        </tr>
+                        <tr>
+                            <td>ul.../ul</td>
+                            <td>Unordered List</td>
+                        </tr>
+                        <tr>
+                            <td>ol.../ol</td>
+                            <td>Ordered List</td>
+                        </tr>
+                        <tr>
+                            <td>h1.../h1</td>
+                            <td>Header (no. from 1 to 6 determines the font size)</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                    To create multiple pages in a website, i first duplicate the codes for the current page and insert the links to my other pages.
+                    <br>
+                    <h2>CSS</h2>
+                    A website created using only HTML only can be quite unappealing, hence we can use CSS to change the appearance of it.
+                    <br>
+                    <br>
+                    div tags are used to distinguish parts of a website, which allows the coder to set the font, size, background, orentation, etc of the web page.
+                    <br>
+                    <img src="images/css.JPG" width="550" />
+                    <br>
+                    <h3>Background Properties</h3>
+                    background-color: allows us to change the colour of the web page, we can either key in colours such as
+                    dimgray, lightblue, etc or we can just key in the Hexadecimal (Hex) colour codes.
+                    Hex color codes allows us to have more choices of colour. The Hex codes are written in this format #xxxxxx, where
+                    the values for each colour ranges from 00 to FF.
+                    <br>
+                    <img src="images/hexCode.JPG" width="550" />
+                    <br>
+                    background: url(File Name) allows us to set an image as the background of a page
+                    <br>
+                    <img src="images/backgroundImage.JPG" width="600" />
+                </p>
+            </div>
+            <div id="right">
+                <br>
+                <br>
+                <br>
+                <img src="images/basicweb.JPG" width="600" />
+                <br>
+                <img src="images/no_css.JPG" width="600" />
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br>
+                <img src="images/with_css.JPG" width="600" />
+            </div>
+            <style>
+                #left {
+                    float: left;
+                    width: 600px;
+                    padding: 0px;
+                    height: 3000px;
+                }
 
-            <p>
-                The section documents the web development assignment.
-                <ol>
-                    <li>What is HTML, basic structure of HTML pages.</li>
-                    <li>Common HTML tags, images, hyperlinks.</li>
-                    <li>CSS and style sheets.</li>
-                </ol>
-                HTML is a language used to organise the content of a website it consist of tags (examples of tags are in the table).
-                The tags define the parts of the document.
-                <br>
-                <table style="width:100%">
-                    <tr>
-                        <th>HTML Tags</th>
-                        <th>Definition</th>
-                    </tr>
-                    <tr>
-                        <td>html.../html</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>head.../head</td>
-                        <td>Page description</td>
-                    </tr>
-                    <tr>
-                        <td>body.../body</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>p.../p</td>
-                        <td>Next Paragraph</td>
-                    </tr>
-                    <tr>
-                        <td>br.../br</td>
-                        <td>Next Line</td>
-                    </tr>
-                    <tr>
-                        <td>ul.../ul</td>
-                        <td>Unordered List</td>
-                    </tr>
-                    <tr>
-                        <td>ol.../ol</td>
-                        <td>Ordered List</td>
-                    </tr>
-                    <tr>
-                        <td>h1.../h1</td>
-                        <td>Header (no. from 1 to 6 determines the font size)</td>
-                    </tr>
-                </table>
-                <br>
-                To start making a website, i first create a basic structure using the HTML tags.
-                <br>
-                <img src="images/basicweb.JPG" width="450" />
-                <br>
-                To create multiple pages in a website, i first duplicate the codes for the current page and insert the links to my other pages.
-                <br>
-                <h2>CSS</h2>
-                <br>
-                A website created using only HTML only can be quite unappealing, hence we can use CSS to change the appearance of it.
-                <br>
-                div tags are used to distinguish parts of a website, which allows the coder to set the font, size, background, orentation, etc of the web page.
-            </p>
+                #right {
+                    float: right;
+                    padding: 0px;
+                    height: 3000px;
+                }
+            </style>
         </div>
-            
+
         <div id="footer">
             Copyright &copy; 2021 Marcus Chia.
         </div>
