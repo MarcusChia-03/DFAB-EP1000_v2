@@ -15,46 +15,39 @@
             + "px; top: " + e.clientY + "px;";
         });
     </script>
-
+    
     <div id="container">
         <div id="header">
-            <h1>My Fabrication & Prototyping Site</h1>
+            <h1>Fabrication & Prototyping Site</h1>
         </div>
+        <div id="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="" class="active">Home</a>
+                <a href="About.html">About</a>
+                <a href="Safety.html">FABLab Safety</a>
+                <a href="Project.html">Project Management</a>
+                <a href="Web.html">Web</a>
+                <a href="Program.html">Embedded Programming</a>
 
-        <div class="topnav" id="myTopnav">
-            <a href="" class="active">Home</a>
-            <a href="About.html">About</a>
-            <a href="Safety.html">FABLab Safety</a>
-            <a href="Project.html">Project Management</a>
-            <a href="Web.html">Web</a>
-			<a href="">Embedded Programming</a>
-
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">
-                    Fabrication &#128899
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#">3D Printing</a>
-                    <a href="#">Laser Cutting</a>
-                    <a href="#">CNC Router</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        Fabrication &#128899
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="Printing.html">3D Printing</a>
+                        <a href="Cutting.html">Laser Cutting</a>
+                        <a href="CNC.html">CNC Router</a>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div id="content">
             <h1>Home</h1>
             <p>
                 Welcome to the Home Page!
             </p>
-            <p>
-                Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida,
-                orci amet iaculis aptent blandit quam accumsan donec in facilisis.
-            </p>
-            <p>
-                Cursus curabitur aliquet condimentum tincidunt facilisis non cubilia lorem et pretium
-                aliquam phasellus ipsum metus quisque auctor tristique donec nibh, praesent congue.
-            </p>
+            This website is used to document my assignments, projects and the procedures of accomplishing it.
         </div>
 
         <div id="footer">
@@ -87,5 +80,21 @@ window.onclick = function(e) {
   }
 }
     </script>
+
+    <script>
+window.onscroll = function() {menuFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function menuFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+
 </body>
 </html>
