@@ -46,47 +46,106 @@
             <h1>3D Printing</h1>
             <h2>Phone Stand (3D Printed Assembly)</h2>
             <br>
-            <img src="images/phoneStand.JPG" height="500" />
-            <img src="images/actualStand.jfif" height="500" />
+            <img src="images/Knight.JPG" height="600" />
             <h2>Digital Fabrication</h2>
-            <div class="slideshow-container">
+            <img src="images/chessPiece/1.JPG" width="900" />
+            <br>
+            #1 Insert canvas, go to Insert > Canvas, adjust its size to fit the specified dimensions (Base: 30mm, Height: 50mm).
+            <br>
+            <img src="images/chessPiece/2.JPG" width="900" />
+            <br>
+            #2 Create sketch on the front plane, draw the cross section of the base according to the canvas. (Make sure that the profile is closed.)
+            <br>
+            <img src="images/chessPiece/3.JPG" width="900" />
+            <br>
+            #3 To Revolve, go to Create > Revolve, select the profile and axis, revolve 360 deg.
+            <br>
+            <img src="images/chessPiece/4.JPG" width="900" />
+            <br>
+            #4 Create another sketch on the front plane, draw the cross section of the horse, excluding the ears.
+            <br>
+            <img src="images/chessPiece/5.JPG" width="900" />
+            <br>
+            #5 Extrude the profile by 1mm, under Direction select Symmetric.
+            <br>
+            <img src="images/chessPiece/6.JPG" width="900" />
+            <br>
+            #6 Create sketch and draw out the ears.
+            <br>
+            <img src="images/chessPiece/7.JPG" width="900" />
+            <br>
+            #7 Extrude the drawn profile by 3mm, under Direction select One Side.
+            <br>
+            <img src="images/chessPiece/8.JPG" width="900" />
+            <br>
+            #8 Select the profile of the mane and extrude it out by 1.5mm.
+            <br>
+            <img src="images/chessPiece/9.JPG" width="900" />
+            <br>
+            #9 Create sketch and draw out to eyes.
+            <br>
+            <img src="images/chessPiece/10.JPG" width="900" />
+            <br>
+            #10 Use Mirror, go to Create > Mirror, to mirror the feature on the other side, select the features to be mirrored and the mirror plane.
+            <br>
+            <img src="images/chessPiece/11.JPG" width="900" />
+            <br>
+            #11 To use Fillet function, go to Modify > Fillet, click on edges to be rounded and select the radius.
+            <br>
+            <img src="images/chessPiece/12.png" width="900" />
+            <br>
+            #12 Add more fillets.
+            <br>
+            <img src="images/chessPiece/13.JPG" width="900" />
+            <br>
+            #13 To use Chamfer function, go to Modify > Chamfer, click on edges to be chamfered and select the distance.
+            <br>
+            <img src="images/chessPiece/finished.JPG" width="900" />
+            <br>
+            #14 The Chess Piece is now complete and ready to be sliced.
+            <br>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 10</div>
-                    <img src="images/inventor/1-0.JPG" style="width:100%">
-                    <div class="text">Create a new sketch on the front plane and draw the 2D shape of the stand.</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 10</div>
-                    <img src="images/inventor/1-1.JPG" style="width:100%">
-                    <div class="text">Extrude out the selected part of the sketch 3.0 mm.</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 10</div>
-                    <img src="images/inventor/1-2.JPG" style="width:100%">
-                    <div class="text">Mirror the solid using the YZ Plane to form the other half.</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 10</div>
-                    <img src="images/inventor/1-3.JPG" style="width:100%">
-                    <div class="text">Create an off-set plane.</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 10</div>
-                    <img src="images/inventor/1-4.JPG" style="width:100%">
-                    <div class="text">Create a sketch for the hinge.</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
             <h2>Slicing</h2>
+            <img src="images/slicing/1.JPG" width="900" />
+            <br>
+            Go to Tools > Make > 3D Print, and select object to be printed, uncheck "Send to 3D Print Utility".
+            <br>
+            <img src="images/slicing/2.JPG" width="900" />
+            <br>
+            Select file type as .stl and save.
+            <br>
+            <img src="images/slicing/3.JPG" width="900" />
+            <br>
+            Launch the slicer software Ultimaker Cura, and open the stl file.
+            <br>
+            <img src="images/slicing/4.JPG" width="900" />
+            <br>
+            Select the printer and change the print settings. (Parameters can be found at the bottom of the page)
+            <br>
+            When done, click on the slice button to check the printing time, tweak the settings to adjust print time.
+            <br>
+            <img src="images/slicing/5.JPG" width="900" />
+            <br>
+            After slicing, click on "Preview" to preview. Save it as gcode.
+            <br>
 
+            <h2>Slicing Parameters</h2>
+            <ul>
+                <li>Printer : Ultimaker 2+</li>
+                <li>Material : PLA</li>
+                <li>Nozzle : 0.4mm</li>
+                <li>Layer Height : 0.2mm</li>
+                <li>Wall Thickness : 0.8mm</li>
+                <li>Wall Line Count : 2</li>
+                <li>Top Layers : 3</li>
+                <li>Bottom Laters : 3</li>
+                <li>Infill Density : 15%</li>
+                <li>Print Speed : 60 mm/s</li>
+                <li>Enable Retaction : Selected</li>
+                <li>Generate Support : Selected</li>
+                <li>Support Placement : Everywhere</li>
+                <li>Build Plate Adhesion Type : Skirt</li>
+            </ul>
         </div>
 
         <div id="footer">
@@ -135,111 +194,5 @@ function menuFunction() {
 }
     </script>
 
-    <script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-    </script>
-
-    <style>
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-            background-color: #AAAAAA;
-            padding: 50px;
-            border-radius: 10px
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            user-select: none;
-        }
-        .next {
-            right: 0;
-            border-radius: 5px 0 0 5px;
-        }
-        .prev {
-            left: 0;
-            border-radius: 0 5px 5px 0;
-        }
-            .prev:hover, .next:hover {
-                background-color: rgba(0,0,0,0.8);
-            }
-
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: left;
-        }
-
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 15px 0px;
-            position: absolute;
-            top: 0;
-        }
-
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4
-            }
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-            to {
-                opacity: 1
-            }
-        }
-    </style>
 </body>
 </html>
