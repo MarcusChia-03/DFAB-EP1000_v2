@@ -20,7 +20,6 @@
         <div id="header">
             <h1>Fabrication & Prototyping Site</h1>
         </div>
-
         <div id="navbar">
             <div class="topnav" id="myTopnav">
                 <a href="Home.html">Home</a>
@@ -32,12 +31,11 @@
 
                 <div class="dropdown">
                     <button class="dropbtn" onclick="myFunction()">
-                        Fabrication &#128899<i class="fa fa-caret-down"></i>
+                        Assignments &#128899<i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="Printing.html">3D Printing</a>
                         <a href="Cutting.html">Laser Cutting</a>
-                        <a href="CNC.html">CNC Router</a>
                     </div>
                 </div>
             </div>
@@ -45,12 +43,142 @@
 
         <div id="content">
             <h1>Laser Cutting</h1>
-			<h2>Laser Cut Box with lid</h2>
-			<iframe src="https://ichat1069.autodesk360.com/shares/public/SH919a0QTf3c32634dcf5178d9cc97066a5a?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            <h2>Laser Cut Box with Lid</h2>
+            <iframe src="https://ichat1069.autodesk360.com/shares/public/SH919a0QTf3c32634dcf5178d9cc97066a5a?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+            <h2>Computer Aided Design (CAD)</h2>
+            <img src="images/laserCut/parameters.JPG" width="900" />
+            <br>
+            #1 Setting Parameters, go to Modify > Change Parameters, click "+" to add new Parameter. <br>The parameters allows users to change the dimensions of the 3D model.
+            <br>
+            <img src="images/laserCut/0.JPG" width="900" />
+            <br>
+            #2 Create an offset plane, go to Construct > Offset Plane
+            <br>
+            <img src="images/laserCut/1.png" width="900" />
+            <br>
+            #3 Create a new sketch on that plane. Using 2-point rectangle, draw out the base of the box, use "Sketch Dimension" <br>and key parameter name. Use the "Tab" key to toggle between length and width.
+            <br>
+            <img src="images/laserCut/2.JPG" width="900" />
+            <br>
+            #4 Draw 2 construction lines. Use "Mirror" to create the same sketch on the other side. <br>Select the objects to be mirrored and the construction line as the mirror line.
+            <br>
+            <img src="images/laserCut/3.JPG" width="900" />
+            <br>
+            #5 Extrude the selected proflies by "-thickness" or "thickness" depending on the direction.
+            <br>
+            <img src="images/laserCut/4.JPG" width="900" />
+            <br>
+            #6 Create an new sketch on the tab at right side and draw out the right side of the box using the same method for the<br> base. Ignore the dimension values as it can be changed anytime.
+            <br>
+            <img src="images/laserCut/5.JPG" width="900" />
+            <br>
+            #7 Extrude the selected proflies by "-thickness" or "thickness" depending on the direction.
+            <br>
+            <img src="images/laserCut/6.png" width="900" />
+            <br>
+            #8 Create another new sketch on the front plane and draw the front of the box using the same method for the base. <br>For the height, use "height-thickness". Use "Project Geometry" to project the edges of the 3D model, go to Create > <br>Project/Include > Project. Extrude the selected proflies by "-thickness" or "thickness" depending on the direction.
+            <br>
+            <img src="images/laserCut/7.JPG" width="900" />
+            <br>
+            #9 To create the same body for the other side , use "Extrude". Select the profile to be extruded, for Start select <br>"Object" and select the starting point of the extrusion. For Operation, select "New Body".
+            <br>
+            <img src="images/laserCut/8.JPG" width="900" />
+            <br>
+            #10 Create a new sketch on the top of the front part of the box, draw the lid and extrude it out by "thickness".
+            <br>
+            <img src="images/laserCut/9.JPG" width="900" />
+            <br>
+            #11 Based on step #9 create the left side of the box.
+            <br>
+            <img src="images/laserCut/10.JPG" width="900" />
+            <br>
+            #12 Create sketch on the lid of the box and draw out 2 slots, use "Mirror" so that you only need to draw one. <br>The length and width should be 20mm and "thickness" respectively. Using "Extrude" cut out the slots.
+            <br>
+            <img src="images/laserCut/11.JPG" width="900" />
+            <br>
+            #13 Create sketch on the right side of the box use "Point" which under "Create" to mark out the position of the hole. <br>Use the "Hole" command to make a hole for the hinge. For the diameter, use the parameter "hole".
+            <br>
+            <img src="images/laserCut/12.JPG" width="900" />
+            <br>
+            #14 Create a sketch on the side of the slot. Draw out the supports. Dimension the thickness of the support to "hole-1.3mm".
+            <br>
+            <img src="images/laserCut/13.png" width="900" />
+            <br>
+            #15 Extrude the profile by "thickness". Based on step #9 create another support for the other side.
+            <br>
+            <img src="images/laserCut/14.png" width="900" />
+            <br>
+            #16 Create a sketch on the slot of the support. Project Geometry the edges of the supports and draw out the hinge.
+            <br>
+            <img src="images/laserCut/15.JPG" width="900" />
+            <br>
+            #17 Extrude the profile by "thickness". Add filets to the corners.
+            <br>
+            <img src="images/laserCut/16.JPG" width="900" />
+            <br>
+            #18 For the back of the box, use the "Extrude" command to reduce the height of the back part. <br>This necessary for the box to be able to open. The amount of clearance may vary depending on the position of the hinge.
+            <br>
+            <img src="images/laserCut/17.png" width="900" />
+            <br>
+            #19 Create another sketch to mark out the hole for the hand crank and use the "Hole" command. <br>The position of the hole depends on the music box mechanism.
+            <br>
+            <img src="images/laserCut/18.JPG" width="900" />
+            <br>
+            #20 By changing the visibility of the parts, add filets to the edges of the tabs.
+            <br>
+            <img src="images/laserCut/19.JPG" width="900" />
+            <br>
+            #21 The box is now completed.
+            <br>
+            <h2>Exporting and Preparation for Laser Cutting</h2>
+            <img src="images/laserCut/20.JPG" width="900" />
+            <br>
+            #1 Create sketch on the profile you want to laser cut out and rename it. <br>Right click on the sketch and save it as DXF.
+            <br>
+            <img src="images/laserCut/21.JPG" width="900" />
+            <br>
+            #2 Using Inkscape, import all the DXF files and arrange the profiles.
+            <br>
+            <img src="images/laserCut/22.JPG" width="900" />
+            <br>
+            #3 To decorate the box, you can import images into it.
+            <br>
+            <img src="images/laserCut/23.JPG" width="900" />
+            <br>
+            #4 Lastly, save the file in PDF format.
+            <br>
+            <h2>Laser Cutting & Assembly Process</h2>
+            <h3>Engraving</h3>
+            <img src="images/laserCut/cut1.jfif" width="900" />
+            <br>
+            <h3>Cutting</h3>
+            <img src="images/laserCut/cut2.jfif" width="900" />
+            <img src="images/laserCut/cut3.jfif" width="900" />
+            <br>
+            <h3>Parts</h3>
+            <img src="images/laserCut/parts.jfif" width="900" />
+            <br>
+            <h3>Assembly</h3>
+            <img src="images/laserCut/assembly1.jfif" width="900" />
+            <br>
+            #1 Glue the parts for the box and lid, leave one side empty.
+            <br>
+            <img src="images/laserCut/assembly2.jfif" width="900" />
+            <br>
+            #2 Insert the music box mechanism and glue it to the base.
+            <br>
+            <img src="images/laserCut/assembly3.jfif" width="900" />
+            <br>
+            #3 Put the hinge piece through the hole and connect the lid, glue the pieces if they are loose.
+            <br>
+            <br>
+            <h2>Final Product</h2>
+            <img src="images/laserCut/finish1.jfif" width="900" />
+            <img src="images/laserCut/finish2.jfif" width="900" />
         </div>
 
         <div id="footer">
-            Copyright &copy; 2021 Marcus Chia.
+            Copyright &copy; 2021 Marcus Chia Jun Hock.
         </div>
     </div>
     <script>
