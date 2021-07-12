@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Style_V2.css">
+    <link rel="stylesheet" href="Style_Home.css">
 </head>
 <body>
     <div class="cursor"></div>
@@ -15,7 +15,7 @@
             + "px; top: " + e.clientY + "px;";
         });
     </script>
-    
+
     <div id="container">
         <div id="header">
             <h1>Fabrication & Prototyping Site</h1>
@@ -31,27 +31,74 @@
 
                 <div class="dropdown">
                     <button class="dropbtn" onclick="myFunction()">
-                        Fabrication &#128899
+                        Assignments &#128899
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="Printing.html">3D Printing</a>
                         <a href="Cutting.html">Laser Cutting</a>
-                        <a href="CNC.html">CNC Router</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="slideshow">
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/laserCut/cut3.jfif" style="width:100%">
+                    <div class="text">Laser Cutting</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/laserCut/assembly2.jfif" style="width:100%">
+                    <div class="text">Laser Cut Music Box</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/chessPiece/home.jfif" style="width:100%">
+                    <div class="text">3D Printing</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/chessPiece/home2.jfif" style="width:100%">
+                    <div class="text">3D Printed Chess Piece</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            
+        </div>
+
         <div id="content">
             <h1>Home</h1>
             <p>
                 Welcome to the Home Page!
             </p>
-            This website is used to document my assignments, projects and the procedures of accomplishing it.
+            This website is used to document my assignments and projects.
+            This site covers content about the followings:
+            <ol>
+                <li>FabLab Safety</li>
+                <li>Web Development</li>
+                <li>Computer Aided Design (CAD)</li>
+                <li>3D Printing</li>
+                <li>Laser Cutting</li>
+                <li>Embedded Programming</li>
+            </ol>
+            <br><br>
         </div>
 
         <div id="footer">
-            Copyright &copy; 2021 Marcus Chia.
+            Copyright &copy; 2021 Marcus Chia Jun Hock.
         </div>
     </div>
     <script>
@@ -93,6 +140,28 @@ function menuFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+    </script>
+
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
     </script>
 
