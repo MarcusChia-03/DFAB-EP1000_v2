@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style_V2.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function(e){
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX
+            + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+
+    <div id="container">
+        <div id="header">
+            <h1>Fabrication & Prototyping Site</h1>
+        </div>
+
+        <div id="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Safety.html">FABLab Safety</a>
+                <a href="Project.html">Project Management</a>
+                <a href="Web.html">Web</a>
+                <a href="Program.html">Embedded Programming</a>
+                <a href="" class="active">Module Project</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        Assignments &#128899
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="Printing.html">3D Printing</a>
+                        <a href="Cutting.html">Laser Cutting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <h1>Module Project</h1>
+            <h1>Mini Coin Operated Snack Machine</h1>
+            <h2>Description</h2>
+            It dispenses snacks(choclate bars, sweets), using a gravity feed magazine, whenever a coin is inserted.
+            After inserting a $1 coin, the user can select between two options through the push buttons.
+            A servo is used to dispense the snack.
+            <h2>Features</h2>
+            <ol>
+                <li>A PIR motion detector sensor is used to detect the coin inserted.</li>
+                <li>Push buttons for users to select options.</li>
+                <li>Servo to dispense snack.</li>
+            </ol>
+            Optional(If there is enough time)
+            <ol>
+                <li>Only $1 coins are accepted. The coin slides through a compartment, it will fall through and get rejected if it is smaller than a 1$ coin. (only works for newer coins)</li>
+                <li>A mechanism controlled by a servo to return coin if user changed their mind.</li>
+            </ol>
+
+            <img src="images/prototype.JPG" width="800" />
+
+            <h2>Fabrication techniques</h2>
+            <table style="width:100%">
+                <tr>
+                    <th>Technique</th>
+                    <th>Makes</th>
+                </tr>
+                <tr>
+                    <td>Laser Cutting</td>
+                    <td>Casing and Dividers</td>
+                </tr>
+                <tr>
+                    <td>3D Printing</td>
+                    <td>Dispensing Mechanism</td>
+                </tr>
+                <tr>
+                    <td>CAD Design</td>
+                    <td>Hardware design and patterns for engraving</td>
+                </tr>
+                <tr>
+                    <td>Processing System</td>
+                    <td>Arduino UNO</td>
+                </tr>
+                <tr>
+                    <td>Input Devices</td>
+                    <td>Push Buttons, PIR Sensor</td>
+                </tr>
+                <tr>
+                    <td>Output Devices</td>
+                    <td>Servos, LEDs</td>
+                </tr>
+                <tr>
+                    <td>Power</td>
+                    <td>Single 5V DC plug</td>
+                </tr>
+            </table>
+            <h2>Bill of Materials</h2>
+            <table style="width:100%">
+                <tr>
+                    <th>No.</th>
+                    <th>Quantity</th>
+                    <th>Description</th>
+                    <th>Cost (each)</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>1</td>
+                    <td>Arduino Nano or compatable CPU</td>
+                    <td>$6.50</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>3</td>
+                    <td>Tower Pro Servo</td>
+                    <td>$2.45</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>3</td>
+                    <td>Mini Pushbuttons</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>5</td>
+                    <td>LEDs, white x3, green x1, yellow x1</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>2</td>
+                    <td>A3 3mm Ply Wood</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>1</td>
+                    <td>A3 3 mm Clear Acrylic</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+
+
+        <div id="footer">
+            Copyright &copy; 2021 Marcus Chia Jun Hock.
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+    <script>
+window.onscroll = function() {menuFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function menuFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+</body>
+</html>
