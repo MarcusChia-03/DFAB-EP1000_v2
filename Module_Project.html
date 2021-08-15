@@ -47,24 +47,19 @@
         <div id="content">
             <h1>Module Project</h1>
             <h1>Mini Coin Operated Snack Machine</h1>
+            <img src="images/moduleProject/Main.jfif" width="1000" />
             <h2>Description</h2>
-            It dispenses snacks(chocolate bars, sweets), using a gravity feed magazine, whenever a coin is inserted.
+            It dispenses snacks(sweets), using a gravity feed magazine, whenever a coin is inserted.
             After inserting a $1 coin, the user can select between two options through the push buttons.
-            A servo is used to dispense the snack.
+            Servos are used to dispense the snack and return the coin.
             <h2>Features</h2>
             <ol>
                 <li>A PIR motion detector sensor is used to detect the coin inserted.</li>
                 <li>Push buttons for users to select options.</li>
                 <li>Servo to dispense snack.</li>
-            </ol>
-            Optional(If there is enough time)
-            <ol>
                 <li>Only $1 coins are accepted. The coin slides through a compartment, it will fall through and get rejected if it is smaller than a $1 coin. (only works for newer coins)</li>
                 <li>A mechanism controlled by a servo to return coin if user changed their mind.</li>
             </ol>
-
-            <img src="images/prototype.JPG" width="800" />
-
             <h2>Fabrication techniques</h2>
             <table style="width:100%">
                 <tr>
@@ -85,7 +80,7 @@
                 </tr>
                 <tr>
                     <td>Processing System</td>
-                    <td>Arduino Nano or compatable CPU</td>
+                    <td>Arduino Uno or compatable CPU</td>
                 </tr>
                 <tr>
                     <td>Input Devices</td>
@@ -117,43 +112,149 @@
                 <tr>
                     <td>2.</td>
                     <td>3</td>
-                    <td><a href="https://shopee.sg/RC-Mini-Servo-Tower-Pro-SG90-Micro-Servo-for-RC-250-450-Helicopter-Air-Plane-Car-Drop-SG90-9G-Micro-Servo-Motor-For-Robot-RC-i.266656037.8874179817?position=7">Tower Pro Servo </a></td>
+                    <td><a href="https://shopee.sg/RC-Mini-Servo-Tower-Pro-SG90-Micro-Servo-for-RC-250-450-Helicopter-Air-Plane-Car-Drop-SG90-9G-Micro-Servo-Motor-For-Robot-RC-i.266656037.8874179817?position=7">Mini Servo </a></td>
                     <td>$2.45</td>
                 </tr>
                 <tr>
                     <td>3.</td>
                     <td>3</td>
-                    <td>Mini Pushbuttons</td>
-                    <td>-</td>
+                    <td><a href="https://shopee.sg/wee-100-Pcs-6x6x5mm-2-Pin-Micro-Momentary-Push-Button-Tactile-Switch-i.329878633.2970430437?gclid=CjwKCAjwx8iIBhBwEiwA2quaq2QHnToxY0OeuTdRIAzkOLVgu6u6JvH39pPy6ZeLNvz_ysaKuOwWCxoC2yIQAvD_BwE">2-Pin Mini Pushbuttons</a></td>
+                    <td>$0.06</td>
                 </tr>
                 <tr>
                     <td>4.</td>
-                    <td>6</td>
-                    <td>LEDs, white x2, green x1, yellow x3</td>
+                    <td>5</td>
+                    <td>LEDs, white x2, yellow x3</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>5.</td>
                     <td>1</td>
-                    <td><a href="https://shopee.sg/-trtu_hot-10Pcs-DC-022B-Power-Supply-Jack-Socket-Female-Panel-Mount-Connector-5.5*2.1-i.348240512.5468845518?__hybrid_pc__=1&stm_referrer=">5V DC Power Socket Panel Mount(female)</a></td>
-                    <td>$0.30</td>
+                    <td><a href="https://shopee.sg/HC-SR501-Adjust-IR-Pyroelectric-Infrared-PIR-Motion-Sensor-Detector-Module-for-Arduino-for-raspberry-pi-kits-i.161750523.6511576216?gclid=CjwKCAjwx8iIBhBwEiwA2quaqwQZDhUiKHTML-4AHoui1ofdu763FZsKRCg00_rCS7fpZNeNdLBYABoCRcEQAvD_BwE">PIR Sensor</a></td>
+                    <td>$1.50</td>
                 </tr>
                 <tr>
                     <td>6.</td>
-                    <td>3</td>
-                    <td>A3 3mm Ply Wood</td>
+                    <td>1</td>
+                    <td>A2 3.5 mm Ply Wood</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>7.</td>
-                    <td>2</td>
+                    <td>1</td>
                     <td>A3 3 mm Clear Acrylic</td>
                     <td>-</td>
                 </tr>
             </table>
             <br>
-        </div>
+            <h2>Computer Aided Design (CAD)</h2>
+            <iframe src="https://ichat1069.autodesk360.com/shares/public/SH919a0QTf3c32634dcf62809df43b8a48b4?mode=embed" width="600" height="550" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+            <img src="images/moduleProject/CAD/parameters.JPG" width="500" />
+            <img src="images/moduleProject/CAD/1.JPG" width="550" />
+            <img src="images/moduleProject/CAD/2.JPG" width="550" />
+            <img src="images/moduleProject/CAD/3.JPG" width="550" />
+            <img src="images/moduleProject/CAD/4.JPG" width="550" /><br>
+            I started of by creating the base followed by the other sides of the housing, i also created slots for the shelfs and partitions.
+            <br><br>
+            <img src="images/moduleProject/CAD/5.JPG" width="550" />
+            <img src="images/moduleProject/CAD/6.JPG" width="550" /><br>
+            After creating an offset plane and sketch,i projected(Create > Project/Include ) the outline and slots from the left and right profile to create the divider.Then i created the back panel.
+            <br><br>
+            <img src="images/moduleProject/CAD/7.JPG" width="550" />
+            <img src="images/moduleProject/CAD/8.JPG" width="550" /><br>
+            Next, i designed the front panel which consist of 2 pieces, the first piece is made of wood while the second piece is made of acrylic.
+            I designed openings for the buttons, window, coins and push door.
+            <br><br>
+            <img src="images/moduleProject/CAD/9.JPG" width="550" />
+            <img src="images/moduleProject/CAD/10.JPG" width="550" /><br>
+            I made a hole which acts as a hinge for the push door, after that, i designed the push door for the 2 compartments.
+            <br><br>
+            <img src="images/moduleProject/CAD/11.JPG" width="550" />
+            <img src="images/moduleProject/CAD/12.JPG" width="550" /><br>
+            I then design the shelfs for the vending machine, i included openings and holes to mount the servo that is used for dispensing.
+            <br><br>
+            <img src="images/moduleProject/CAD/13.JPG" width="550" />
+            <img src="images/moduleProject/CAD/14.JPG" width="550" />
+            <img src="images/moduleProject/CAD/15.JPG" width="550" />
+            <img src="images/moduleProject/CAD/16.JPG" width="550" /><br>
+            After that i created more dividers, to seperate compartments and also to hold the snacks.
+            <br><br>
+            <img src="images/moduleProject/CAD/17.JPG" width="550" />
+            <img src="images/moduleProject/CAD/18.JPG" width="550" /><br>
+            I made a slope which sorts out $1 from the rest of the coins. The hole i made is slightly smaller than a new $1 coin.
+            <br><br>
+            <img src="images/moduleProject/CAD/19.JPG" width="550" />
+            <img src="images/moduleProject/CAD/20.JPG" width="550" /><br>
+            Next i designed a mechanism to return and deposit the coin, i also designed a slot to mount the servo.
+            <br><br>
+            <img src="images/moduleProject/CAD/21.JPG" width="550" />
+            <img src="images/moduleProject/CAD/22.JPG" width="550" /><br>
+            I designed a linkage to link the servo to that mechanism and also a housing to house the push buttons and LEDs.
+            <br><br>
+            <img src="images/moduleProject/CAD/23.JPG" width="550" />
+            <img src="images/moduleProject/CAD/24.JPG" width="550" /><br>
+            Lastly, i designed an attachment for the servo to push and dispense the snacks.
+            I also designed a movable partition so that i am able to fit snacks of different length.
+            <br><br>
+            <h2>3D Printing</h2>
+            <img src="images/moduleProject/saveAsStl.JPG" width="800" />
+            <br>
+            Go to Tools > Make > 3D Print and select the parts to be printed. Save it as Stl.
+            <br><br>
+            <img src="images/moduleProject/slicing.png" width="800" />
+            <br>
+            Open the stl file in Cura, change the settings and slice it.
+            <br><br>
+            <h2>Slicing Parameters</h2>
+            <ul>
+                <li>Material : PLA</li>
+                <li>Nozzle : 0.4mm</li>
+                <li>Layer Height : 0.2mm</li>
+                <li>Wall Thickness : 1.0mm</li>
+                <li>Wall Line Count : 3</li>
+                <li>Top Layers : 3</li>
+                <li>Bottom Laters : 3</li>
+                <li>Infill Density : 15%</li>
+                <li>Print Speed : 50 mm/s</li>
+                <li>Enable Retaction : Selected</li>
+                <li>Generate Support : Not Selected</li>
+                <li>Build Plate Adhesion Type : Skirt</li>
+            </ul>
+            <h3>3D Printed parts</h3>
+            <img src="images/moduleProject/parts2.jfif" width="800" />
+            <br><br>
+            <h2>Laser Cutting</h2>
+            <img src="images/moduleProject/saveAsDxf.JPG" width="800" />
+            <br>
+            After finishing the design, i created a new sketch on each profile and save it as DXF.
+            <br><br>
+            <img src="images/moduleProject/import.JPG" width="800" />
+            <br>
+            Open inkscape and go to File > Import to insert the DXF file. The canvas size can be changed at File > Document Properties.
+            <br><br>
+            <img src="images/moduleProject/dxfw.JPG" width="800" />
+            <img src="images/moduleProject/dxfa.JPG" width="800" />
+            <br>
+            <h3>Parts</h3>
+            <img src="images/moduleProject/parts.jfif" width="800" />
 
+            <h2>Programming</h2>
+            <h3>Testing of dispensing mechanism and program.</h3>
+            <video width="800" controls>
+                <source src="testing.mp4" type="video/mp4">
+            </video>
+            <h2>Assembly</h2>
+            <img src="images/moduleProject/1.jfif" width="800" />
+            <img src="images/moduleProject/2.jfif" width="800" />
+            <img src="images/moduleProject/3.jfif" width="800" />
+            <img src="images/moduleProject/4.jfif" width="800" />
+            <img src="images/moduleProject/5.jfif" width="800" />
+            <img src="images/moduleProject/6.jfif" width="800" />
+            <img src="images/moduleProject/7.jfif" width="800" />
+            <img src="images/moduleProject/8.jfif" width="800" />
+            <img src="images/moduleProject/9.jfif" width="800" />
+        </div>
+            
 
         <div id="footer">
             Copyright &copy; 2021 Marcus Chia Jun Hock.
