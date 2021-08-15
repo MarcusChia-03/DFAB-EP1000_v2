@@ -21,31 +21,38 @@
             <h1>Fabrication & Prototyping Site</h1>
         </div>
 
-        <div class="topnav" id="myTopnav">
-            <a href="Home.html">Home</a>
-            <a href="" class="active">About</a>
-            <a href="Safety.html">FABLab Safety</a>
-            <a href="Project.html">Project Management</a>
-            <a href="Web.html">Web</a>
-            <a href="Program.html">Embedded Programming</a>
-			<a href="Module_Project.html">Module Project</a>
+        <div id="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="Home.html">Home</a>
+                <a href="About.html" class="active">About</a>
+                <a href="Safety.html">FABLab Safety</a>
+                <a href="Project.html">Project Management</a>
+                <a href="Web.html">Web</a>
+                <a href="Program.html">Embedded Programming</a>
+                <a href="Module_Project.html">Module Project</a>
 
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">
-                    Assignments &#128899
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="Printing.html">3D Printing</a>
-                    <a href="Cutting.html">Laser Cutting</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        Assignments &#128899
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="Printing.html">3D Printing</a>
+                        <a href="Cutting.html">Laser Cutting</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="content">
             <h1>About</h1>
-            Hi, i am a year 2 student taking a diploma in robotics and mechatronics at Singapore Polytechnic.
+            Hi, my name is Marcus, i am a year 2 student taking a diploma in robotics and mechatronics at Singapore Polytechnic.
+            I am from class DMRO/FT/2A/01. My hobbies are building plastic models and RC cars.
             <br><br>
+            <h2>Hobbies</h2>
+            <img src="images/hobby2.jfif" height="450" />
+            <img src="images/hobby1.jfif" height="450" />
+            <br><br><br><br><br>
         </div>
 
         <div id="footer">
@@ -53,32 +60,45 @@
         </div>
     </div>
     <script>
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    }
-    else {
-        x.className = "topnav";
-    }
-    }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
     </script>
 
     <script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+    <script>
+window.onscroll = function() {menuFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function menuFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
   }
 }
     </script>
 </body>
 </html>
-
-
